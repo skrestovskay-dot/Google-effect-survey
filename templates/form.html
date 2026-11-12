@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Опрос: эффект Google</title>
+<style>
+ body{font-family:Arial,sans-serif;max-width:760px;margin:30px auto;padding:0 15px;background:#f7f7f9;color:#222}
+ h1{font-size:22px} h2{font-size:17px;margin-top:28px;border-bottom:2px solid #4C72B0;padding-bottom:4px}
+ label{display:block;margin:10px 0 4px;font-weight:600}
+ input[type=text],select,textarea{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px;font-size:14px}
+ textarea{height:70px}
+ button{margin-top:22px;padding:12px 26px;background:#4C72B0;color:#fff;border:none;border-radius:8px;font-size:16px;cursor:pointer}
+ button:hover{background:#3b5a8c}
+ .scale{display:flex;gap:6px;margin:6px 0 14px}
+ .scale label{font-weight:400;background:#fff;border:1px solid #ccc;border-radius:6px;padding:6px 10px;cursor:pointer}
+</style>
+</head>
+<body>
+<h1>Поисковые системы и генеративный ИИ в учебной деятельности</h1>
+<p>Анонимно, ~7 минут. Шкала 1–5: 1 — совсем не согласен, 5 — полностью согласен.</p>
+
+<form method="post">
+
+<h2>Блок 1. О вас</h2>
+<label>Курс</label>
+<select name="course">
+ <option>1</option><option>2</option><option>3</option><option>4</option><option>магистратура</option>
+</select>
+<label>Специальность</label><input type="text" name="speciality">
+<label>Пол</label>
+<select name="gender"><option>М</option><option>Ж</option><option>не указывать</option></select>
+<label>Основное устройство</label>
+<select name="device"><option>ноутбук</option><option>смартфон</option><option>планшет</option><option>другое</option></select>
+
+<h2>Блок 2. Частота и привычки</h2>
+<label>5. Как часто ищете информацию в интернете?</label>
+<select name="q5"><option>почти никогда</option><option>1–2 раза в неделю</option><option>ежедневно</option><option>несколько раз в день</option></select>
+<label>6. Прежде чем искать, пытаетесь вспомнить сами?</label>
+<select name="q6"><option>всегда</option><option>часто</option><option>иногда</option><option>почти никогда</option></select>
+<label>7. Найдя ответ, вы:</label>
+<select name="q7"><option>сразу использую</option><option>перепроверяю в другом источнике</option><option>пытаюсь понять логику решения</option><option>запоминаю формулировку</option></select>
+<label>8. Используете ChatGPT/ИИ-помощники?</label>
+<select name="q8"><option>нет</option><option>редко</option><option>регулярно</option><option>постоянно</option></select>
+
+<h2>Блок 3. Память и запоминание</h2>
+
+<label>9. Мне трудно запомнить формулы/определения, если я знаю, что могу их быстро найти.</label>
+<div class="scale">
+ <label><input type="radio" name="q9" value="1">1</label><label><input type="radio" name="q9" value="2">2</label><label><input type="radio" name="q9" value="3">3</label><label><input type="radio" name="q9" value="4">4</label><label><input type="radio" name="q9" value="5">5</label>
+</div>
+
+<label>10. Я замечаю, что стал(а) хуже запоминать факты, чем раньше.</label>
+<div class="scale">
+ <label><input type="radio" name="q10" value="1">1</label><label><input type="radio" name="q10" value="2">2</label><label><input type="radio" name="q10" value="3">3</label><label><input type="radio" name="q10" value="4">4</label><label><input type="radio" name="q10" value="5">5</label>
+</div>
+
+<label>11. Я помню, <i>где</i> найти информацию, лучше, чем саму информацию.</label>
+<div class="scale">
+ <label><input type="radio" name="q11" value="1">1</label><label><input type="radio" name="q11" value="2">2</label><label><input type="radio" name="q11" value="3">3</label><label><input type="radio" name="q11" value="4">4</label><label><input type="radio" name="q11" value="5">5</label>
+</div>
+
+<label>12. После поиска ответа у меня возникает ощущение, что я понял(а) материал, хотя проверить это я не могу.</label>
+<div class="scale">
+  <label><input type="radio" name="q12" value="1">1</label><label><input type="radio" name="q12" value="2">2</label><label><input type="radio" name="q12" value="3">3</label><label><input type="radio" name="q12" value="4">4</label><label><input type="radio" name="q12" value="5">5</label>
+</div>
+
+<h2>Блок 4. Критическое мышление</h2>
+
+<label>13. Я проверяю найденную информацию минимум в двух источниках.</label>
+<div class="scale">
+ <label><input type="radio" name="q13" value="1">1</label><label><input type="radio" name="q13" value="2">2</label><label><input type="radio" name="q13" value="3">3</label><label><input type="radio" name="q13" value="4">4</label><label><input type="radio" name="q13" value="5">5</label>
+</div>
+
+<label>14. Я замечаю, когда источник ненадежный или устаревший.</label>
+<div class="scale">
+ <label><input type="radio" name="q14" value="1">1</label><label><input type="radio" name="q14" value="2">2</label><label><input type="radio" name="q14" value="3">3</label><label><input type="radio" name="q14" value="4">4</label><label><input type="radio" name="q14" value="5">5</label>
+</div>
+
+<label>15. Мне проще принять первый найденный ответ, чем сравнивать варианты.</label>
+<div class="scale">
+ <label><input type="radio" name="q15" value="1">1</label><label><input type="radio" name="q15" value="2">2</label><label><input type="radio" name="q15" value="3">3</label><label><input type="radio" name="q15" value="4">4</label><label><input type="radio" name="q15" value="5">5</label>
+</div>
+
+<label>16. Я могу объяснить найденное решение своими словами, не подглядывая.</label>
+<div class="scale">
+ <label><input type="radio" name="q16" value="1">1</label><label><input type="radio" name="q16" value="2">2</label><label><input type="radio" name="q16" value="3">3</label><label><input type="radio" name="q16" value="4">4</label><label><input type="radio" name="q16" value="5">5</label>
+</div>
+
+<h2>Блок 5. Учебные ситуации</h2>
+<label>17. Решая задачу, вы сначала:</label>
+<select name="q17"><option>пробуете сами</option><option>ищете похожий пример</option><option>ищете готовое решение</option></select>
+<label>18. Случалось ли сдавать работу, суть которой не до конца понимали?</label>
+<select name="q18"><option>да</option><option>нет</option><option>затрудняюсь</option></select>
+<label>19. Что важнее в оценке работы?</label>
+<select name="q19"><option>правильный ответ</option><option>понимание хода решения</option><option>оба</option></select>
+
+<h2>Блок 6. Открытый вопрос</h2>
+<label>20. Как вы думаете, интернет помогает вам учиться или мешает? Почему?</label>
+<textarea name="q20"></textarea>
+
+<button type="submit">Отправить</button>
+</form>
+</body>
+</html>
